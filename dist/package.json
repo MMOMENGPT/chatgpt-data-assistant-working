@@ -1,0 +1,17 @@
+{
+		"version": "1.0.0.0",
+		"author": {"name":"MMOMEN GPT","email":"mmomen@me,com"},
+		"resources": [
+			{
+				"resourceId": "rId0",
+				"sourceType": 5,
+				"file": "resources/gptchatclean123456.pbiviz.json"
+			}
+		],
+		"visual": {"name":"gptchatclean","displayName":"ChatGPT Data Assistant","guid":"gptchatclean123456","visualClassName":"Visual","version":"1.0.0.0","description":"Ask questions about your data using GPT.","supportUrl":"https://your-support-url.com","gitHubUrl":"https://github.com/MMOMENGPT/chatgpt-data-assistant"},
+		"metadata": {
+			"pbivizjson": {
+				"resourceId": "rId0"
+			}
+		}
+	}

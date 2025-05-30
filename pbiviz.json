@@ -1,0 +1,28 @@
+{
+  "visual": {
+    "name": "gptchatclean",
+    "displayName": "ChatGPT Data Assistant",
+    "guid": "gptchatclean123456",
+    "visualClassName": "Visual",
+    "version": "1.0.0.0",
+    "description": "Ask questions about your data using GPT.",
+    "supportUrl": "https://your-support-url.com",
+    "gitHubUrl": "https://github.com/MMOMENGPT/chatgpt-data-assistant"
+  },
+  "author": {
+    "name": "MMOMEN GPT",
+    "email": "mmomen@me,com"
+  },
+  "apiVersion": "5.3.0",
+  "assets": {
+    "icon": "assets/icon.png",
+    "thumbnail": "assets/thumbnail.png",
+    "pbivizPackage": "dist/gptchatclean.pbiviz",
+    "screenshots": []
+  },
+  "externalJS": [],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": null,
+  "stringResources": []
+}
