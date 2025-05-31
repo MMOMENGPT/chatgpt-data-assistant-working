@@ -32,7 +32,12 @@ export class Visual implements IVisual {
         const responseBox = this.target.querySelector("#response") as HTMLElement;
 
         button.onclick = async () => {
-            const q = textarea.value;
+            const q = textarea.value.trim();
+            if (!q) {
+                responseBox.textContent = "Please enter a question.";
+                return;
+            }
+
             responseBox.textContent = "Thinking...";
             try {
                 const res = await fetch("https://render-gpt-backend.onrender.com/gpt-query", {
@@ -42,7 +47,7 @@ export class Visual implements IVisual {
                 });
                 const json = await res.json();
                 responseBox.textContent = json.answer || "No answer received.";
-            } catch (err) {
+            } catch (err: any) {
                 responseBox.textContent = "Error: " + err.message;
             }
         };
