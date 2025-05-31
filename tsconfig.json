@@ -1,19 +1,12 @@
 {
-    "compilerOptions": {
-        "allowJs": false,
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "target": "es2022",
-        "sourceMap": true,
-        "outDir": "./.tmp/build/",
-        "moduleResolution": "node",
-        "declaration": true,
-        "lib": [
-            "es2022",
-            "dom"
-        ]
-    },
-    "files": [
-        "./src/visual.ts"
-    ]
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "./.tmp/build/",
+    "typeRoots": ["node_modules/@types", "node_modules/powerbi-visuals-api"],
+    "types": [],
+    "lib": ["ES2015", "DOM"]
+  },
+  "files": ["src/visual.ts"]
 }
